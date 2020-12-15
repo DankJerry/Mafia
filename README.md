@@ -18,3 +18,5 @@ git clone https://github.com/SilentSnake39/Mafia
 cd Mafia Main
 g++ Mafia.cpp
 ./a.out
+
+NOW ENJOY! :D
