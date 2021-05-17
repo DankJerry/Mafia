@@ -16,11 +16,11 @@ int main(){
 	bool gameend = false;
 	bool doctor;
 		if (first){
-	std::cout << "This is Mafia. Please chose your username: ";
+	std::cout << "Hello! Welcome to the Mafia game, this is versionwith bots, you may play it offline. Multiplayer coming soon! Please chose your username: ";
 	std::cin >> username;
 		}
 	cout << "\n";
-	cout << "How many of you are playing? ";
+	cout << "Choose how many bots will be in-game?? ";
 	cin >> numofplay;
 	cout << "\n";
 	usleep(1000000);
@@ -79,7 +79,7 @@ int y;
 int l;
 if (detectivelive){
 	if (detective){
-	  cout << "Who do you think is mafia? Choose from 1 to " << numofplay << "\n";
+	  cout << "Choose who do you want to arrest? Choose from 1 to " << numofplay << "\n";
 	  cin >> l;
 } else {
 	l = rand () % numofplay + 0;
@@ -104,11 +104,11 @@ int g = rand () % numofplay + 0;
 	}
 }
 	if (g == l){
-		cout << "The detective found the mafia! The city wins!\n";
+		cout << "The detective arrested the mafia! The city wins!\n";
 		gameend = true;
 		break;
 	} else {
-		cout << "The detective killed an inoccent!\n";
+		cout << "The detective arrested an inoccent!\n";
 		numofplay--;
 	}
 
